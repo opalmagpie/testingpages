@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>The UFO Watch</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
+<style>
+
+body {
+	font: 62.5%/1.6em "Courier New", Courier, monospace;
+	background-color: #42413C;
+	color:#666;
+	margin:0;
+	padding: 0;
+	border-top:2px solid #2f7946;
+	background-image: url(https://p2.piqsels.com/preview/530/816/930/stars-night-dark-lights.jpg);
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size:3.8em;
+	font-weight:bold;
+	color:#eee;
+	letter-spacing:-1px;
+	margin:20px 0;
+}
+
+h1 a {
+	text-decoration:none;
+	color:#333;
+}
+
+#footer {
+	padding:10px;
+	text-align:right;
+	border-top:1px solid #eee;
+	margin:0;
+	color:#aaa;
+}
+
+#header {
+	border-top:20px solid #2f7946;
+}
+
+#header .description {
+	float:left;
+	margin:0;
+	color:#ddd;
+	font: 13px Courier New;
+}
+
+#header h1 {
+	margin:15px 0 0 0;
+	padding:25px 15px 10px 0;
+}
+
+#header img {
+	float: left;
+	width: 90px;
+	height: 90px;
+	padding: 12px;
+}
+
+#wrapper {
+	width:800px;
+	margin:0 auto;
+	
+}
+
+#nav {
+	border-bottom:1px solid #eee;
+	padding:7px 0 10px;
+	margin:0;
+	border-top:1px solid #eee;
+	height:28px;
+}
+
+#nav li {
+	float:left;
+	list-style:none;
+}
+
+#nav li a {
+	color:#999;
+	padding:5px 5px 7px 5px;
+	background:#fff;
+	font:1.6em Courier New;
+	margin:1px 2px 0 0;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+}
+#nav li a:hover {
+	background-color:#eee;
+	color:#333;
+	text-decoration:none;
+}
+
+#nav li a.active {
+	background-color:#eee;
+	color:#444;
+	text-decoration:none;
+}
+
+.clear {
+	clear:both;
+}
+
+#content {
+	margin:0 275px 0 0 !important;
+	margin:0 277px 0 0;
+	border-right:1px solid #eee;
+	border-left:1px solid #eee;
+	padding:10px 25px 30px 25px;
+	background-color:#FFF;
+}
+
+#content p {
+	line-height:25px;
+	margin:25px 0;
+	font-size:120%;
+	word-spacing:2px;
+}
+
+#content a {
+	text-decoration:none;
+	color:#333;
+	border-bottom:1px solid #eee;
+}
+
+#content a:hover {
+	color:#000;
+}
+
+#content h2 {
+	font-family: "Courier New", Courier, monospace;
+	font-size:2.8em;
+	font-weight:bold;
+	margin:15px 0;
+	border-bottom:1px solid #e6e6e6;
+	padding:5px 0;
+}
+
+#content h2 a {
+	color:#444;
+	text-decoration:none;
+	border:none;
+}
+
+#sidebar {
+	width:250px;
+	float:right;
+	padding:10px 10px 30px 10px;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	background-color:#FFF;
+}
+
+#sidebar h2 {
+	letter-spacing:2px;
+	font-size:1.6em;
+	color:#333;
+	border-bottom:1px solid #e6e6e6;
+	padding:0 0 3px 0;
+}
+
+#sidebar ul {
+	list-style:none;
+	margin:0 0 20px 0;
+}
+
+#sidebar li {
+	padding:3px;
+	border-bottom:1px solid #e6e6e6;
+}
+
+#sidebar li a {
+	color:#333;
+	text-decoration:none;
+}
+
+#sidebar input {
+	width:240px;
+	padding:5px;
+	background:#fdfdfd;
+	color:#444;
+	border:1px solid #e6e6e6;
+	font:12px Courier New;
+}
+
+#sidebar input:focus {
+	background:#fff;
+	border:1px solid #eee;
+}
+
+#sidebar li a:hover {
+	color:#000;
+}
+
+p.news {
+	padding:10px;
+	background:#e0e6ed;
+	margin:10px 0;
+	color:#666;
+	border-bottom:2px solid #2f7946;
+	border-top:2px solid #2f7946;
+	font:12px Courier New;
+}
+
+blockquote {
+	padding:5px 15px;
+	background:#f6f6f6;
+	margin:10px 0;
+	border:1px solid #eee;
+}
+
+#content ul, ol {
+	margin:10px 10px 10px 25px;
+	border-top:1px solid #eee;
+}
+#content li {
+	padding:10px;
+	border-bottom:1px solid #eee;
+}
+
+#content img {
+	background:#ccc;
+	padding:1px;
+	border:5px solid #eee;
+}
+
+#content h3 {
+	margin:10px 0;
+	font:160% Courier New;
+	color:#222;
+}
+
+a.more {
+	display:block;
+	text-align:right;
+	color:#2F460D;
+	text-decoration:none;
+	margin:10px 0 0 0 ;
+}
+a.more:hover {
+	text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+	<img src="https://i.imgur.com/2vv5CEO.png"/>
+    <h1>The UFO Watch</h1>
+    <p class="description">Your place for the latest UFO sightings and news</p>
+	<br><br><br>
+    <ul id="nav">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Archive</a></li>
+    </ul>
+  </div>
+  <div id="sidebar">
+    <h2>Latest News</h2>
+    <p class="news"> An example of a "latest news" type text area. Here would be the excerpt of the article. You can of course put anything you like here. <a href="#" class="more">Read More &raquo;</a> </p>
+    <p class="news"> An example of a "latest news" type text area. Here would be the excerpt of the article. You can of course put anything you like here. <a href="#" class="more">Read More &raquo;</a> </p>
+    <p class="news"> An example of a "latest news" type text area. Here would be the excerpt of the article. You can of course put anything you like here. <a href="#" class="more">Read More &raquo;</a> </p>
+    <h2>Related</h2>
+    <ul>
+         <li><a href="#">Aliens: The Basics</a></li>
+         <li><a href="#">Sighting Timelines</a></li>
+         <li><a href="#">UFOs and You</a></li>
+         <li><a href="#">The Truth Behind Government Coverups</a></li>
+    </ul>
+    <h2>Search</h2>
+    <input name="" type="text" />
+  </div>
+  <div id="content">
+    <h2>alien things</h2>
+	<img src="https://live.staticflickr.com/1223/5112370795_2359a32141_b.jpg" width="400px"></img>
+  </div>
+  <div id="footer">
+    <p>Adapted from template design by <a href="http://www.sixshootermedia.com">Six Shooter Media</a>.<br />
+      ©Copyright 2020 by The UFO Watch. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
