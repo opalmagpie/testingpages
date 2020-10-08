@@ -4,12 +4,21 @@
 <title>The UFO Watch</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
+<script>
+function check() {
+	var x = document.forms["f"]["search"].value;
+	if(x == "arkas") {
+		window.location.replace("https://little-people-everywhere.webador.ie/");
+	}
+	return false;
+}
+</script>
 <style>
 
 body {
 	font: 62.5%/1.6em "Courier New", Courier, monospace;
 	background-color: #42413C;
-	color:#666;
+	color:#555;
 	margin:0;
 	padding: 0;
 	border-top:2px solid #2f7946;
@@ -37,10 +46,9 @@ h1 a {
 
 #footer {
 	padding:10px;
-	text-align:right;
-	border-top:1px solid #eee;
+	text-align:left;
 	margin:0;
-	color:#aaa;
+	color:#bbb;
 }
 
 #header {
@@ -152,6 +160,73 @@ h1 a {
 	border:none;
 }
 
+#comments {
+	margin:0 275px 0 0 !important;
+	margin:0 277px 0 0;
+	border-right:1px solid #eee;
+	border-left:1px solid #eee;
+	padding:10px 25px 30px 25px;
+	background-color:#FFF;
+}
+
+#comments p {
+	float:middle;
+	line-height:15px;
+	margin:15px 0;
+	padding-left:65px;
+	font-size:120%;
+	word-spacing:2px;
+}
+
+#comments p.reply {
+	font-size:1.1em;
+	padding-bottom:5px;
+	border-bottom:1px solid #e6e6e6;
+	cursor: pointer;
+}
+
+#comments p.reply button {
+	font-family: "Courier New", Courier, monospace;
+	font-size:1.1em;
+	outline:none;
+	background:none;
+	border:none;
+	cursor: default;
+	color:#777;
+}
+
+#comments p.reply button:hover {
+	cursor: pointer;
+	color:#000;
+}
+
+#comments h3 {
+	font-family: "Courier New", Courier, monospace;
+	font-size:2.4em;
+	font-weight:bold;
+	padding-bottom:5px;
+	margin:15px 0;
+	border-bottom:1px solid #e6e6e6;
+}
+
+#comments img {
+	float: left;
+	padding: 5px;
+}
+
+#comments h5 {
+	float: left;
+	font-family: "Courier New", Courier, monospace;
+	font-size:1.4em;
+	font-weight:bold;
+	padding: 5px;
+} 
+
+#comments i {
+	color:#777;
+	font-size:0.9em;
+}
+
 #sidebar {
 	width:250px;
 	float:right;
@@ -160,6 +235,7 @@ h1 a {
 	border-right:1px solid #eee;
 	border-bottom:1px solid #eee;
 	background-color:#FFF;
+	height:600px;
 }
 
 #sidebar h2 {
@@ -181,22 +257,30 @@ h1 a {
 }
 
 #sidebar li a {
+	font-size:104%;
 	color:#333;
 	text-decoration:none;
 }
 
 #sidebar input {
-	width:240px;
-	padding:5px;
+	width:202px;
+	padding: 6px 5px 3px 5px;
 	background:#fdfdfd;
 	color:#444;
-	border:1px solid #e6e6e6;
+	border:1px solid #868686;
 	font:12px Courier New;
 }
 
 #sidebar input:focus {
 	background:#fff;
 	border:1px solid #eee;
+}
+
+#sidebar button {
+	margin-top:5px;
+	width:30px;
+	height:25px;
+	font: 16px Courier New;
 }
 
 #sidebar li a:hover {
@@ -216,8 +300,10 @@ p.news {
 blockquote {
 	padding:5px 15px;
 	background:#f6f6f6;
-	margin:10px 0;
 	border:1px solid #eee;
+	line-height:25px;
+	font-size:120%;
+	word-spacing:2px;
 }
 
 #content ul, ol {
@@ -279,12 +365,30 @@ a.more:hover {
          <li><a href="#">UFOs and You</a></li>
          <li><a href="#">The Truth Behind Government Coverups</a></li>
     </ul>
-    <h2>Search</h2>
-    <input name="" type="text" />
+	<form name="f" method="post" onsubmit="return check()">
+		<h2>Search</h2>
+		<input name="search" type="text" />
+		<button>Go</button>
+	</form>
   </div>
   <div id="content">
     <h2>alien things</h2>
 	<img src="https://live.staticflickr.com/1223/5112370795_2359a32141_b.jpg" width="400px"></img>
+	<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used before final copy is available, but it may also be used to temporarily replace copy in a process called greeking, which allows designers to consider form without the meaning of the text influencing the design.</p>
+
+	<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.</p>
+
+	<p>Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets. Lorem ipsum was introduced to the digital world in the mid-1980s when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors including Pages and Microsoft Word have since adopted Lorem ipsum as well.</p>
+  </div>
+  <div id="comments">
+	<h3>1 Comment</h3>
+	<blockquote>Please <a href="#">login</a> to comment</blockquote>
+	<br><br>
+	<img src="https://d11mgq5hlnsdgo.cloudfront.net/5e82a9aa-f0f5-45b6-bc16-5b33bb911eb6.jpg" width="50" height="50" />
+	<h5>O. Conet · <i>5 hours ago</i></h5>
+	<br>
+	<p>I was in the area of the spotting. Heard this weird broadcast on my radio. Possible connection?</p>
+	<p class="reply"><button>▲</button> | <button>▼</button> · <button>Reply</button></p>
   </div>
   <div id="footer">
     <p>Adapted from template design by <a href="http://www.sixshootermedia.com">Six Shooter Media</a>.<br />
